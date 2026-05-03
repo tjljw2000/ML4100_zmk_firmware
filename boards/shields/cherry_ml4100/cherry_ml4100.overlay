@@ -33,14 +33,14 @@
             ;
 
         row-gpios
-            = <&gpio0 30 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 2_ROW1
-            , <&gpio0 31 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 3_ROW2
-            , <&gpio0 29 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 4_ROW3
-            , <&gpio0  2 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 5_ROW4
-            , <&gpio1 13 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 6_ROW5
-            , <&gpio0 28 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 7_ROW6
-            , <&gpio0  3 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 8_ROW7
-            , <&gpio1 10 (GPIO_ACTIVE_HIGN | GPIO_PULL_DOWN)>    // 9_ROW8
+            = <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 2_ROW1
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 3_ROW2
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 4_ROW3
+            , <&gpio0  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 5_ROW4
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 6_ROW5
+            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 7_ROW6
+            , <&gpio0  3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 8_ROW7
+            , <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // 9_ROW8
             ;
     };
 
