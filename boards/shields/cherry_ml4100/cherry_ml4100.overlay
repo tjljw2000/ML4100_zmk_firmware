@@ -21,7 +21,7 @@
             , <&gpio0  8 GPIO_ACTIVE_HIGH>    // 14_COL1	  
             , <&gpio1  9 GPIO_ACTIVE_HIGH>    // 15_COL2	  
             , <&gpio0  4 GPIO_ACTIVE_HIGH>    // 16_COL3	  
-            , <&gpio1  9 GPIO_ACTIVE_HIGH>    // 17_COL4	  
+            , <&gpio0 12 GPIO_ACTIVE_HIGH>    // 17_COL4	  
             , <&gpio0 15 GPIO_ACTIVE_HIGH>    // 18_KB_WinL
             , <&gpio0  7 GPIO_ACTIVE_HIGH>    // 19_KB_WinR
             , <&gpio0 17 GPIO_ACTIVE_HIGH>    // 20_COL5	  
