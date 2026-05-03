@@ -1,0 +1,13 @@
+file_format: "1"
+id: cherry-ml4100
+name: "Cherry ML4100 Wireless" 
+type: shield
+url: https://github.com/tjljw2000/ML4100_zmk_firmware
+requires:
+  - E73_2G4M08S1CX
+features:
+  - keys
+  - studio
+siblings:
+  - corne_left
+  - corne_right
