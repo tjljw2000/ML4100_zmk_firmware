@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <cherry_ml4100-layouts.dtsi>
+#include "cherry_ml4100-layouts.dtsi"
 
 / {
     chosen {
