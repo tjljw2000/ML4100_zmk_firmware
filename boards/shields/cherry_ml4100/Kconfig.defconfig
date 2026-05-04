@@ -1,6 +1,6 @@
 if SHIELD_CHERRY_ML4100
 
 config ZMK_KEYBOARD_NAME
-    default "Cherry ML4100 Wireless"
+    default "Cherry ML4100"
 
 endif
