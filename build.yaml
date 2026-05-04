@@ -1,5 +1,5 @@
 ---
 include:
-  - board: nice_nano
+  - board: nrfmicro_nrf52840
     shield: cherry_ml4100
     cmake-args: -DCONFIG_ZMK_STUDIO=y
