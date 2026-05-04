@@ -11,8 +11,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: ml4100
-      remote: ML4100_zmk_firmware
+    - name: ML4100_zmk_firmware
+      remote: ml4100
       revision: main
   self:
     path: config
