@@ -1,4 +1,4 @@
 ---
 include:
-  - board: nice_nano//zmk
+  - board: "nice_nano//zmk"
     shield: cherry_ml4100
