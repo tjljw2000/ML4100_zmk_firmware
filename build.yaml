@@ -2,4 +2,3 @@
 include:
   - board: nice_nano
     shield: cherry_ml4100
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
