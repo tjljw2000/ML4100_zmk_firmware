@@ -63,15 +63,15 @@
         compatible = "gpio-leds";
 
         num_lock_led: num_lock_led {
-            gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
+            gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
         };
 
         caps_lock_led: caps_lock_led {
-            gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
+            gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
         };
 
         scroll_lock_led: scroll_lock_led {
-            gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
+            gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;
         };
     };
 
