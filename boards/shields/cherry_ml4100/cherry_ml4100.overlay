@@ -67,7 +67,7 @@
         };
 
         caps_lock_led: caps_lock_led {
-            gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
+            gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
         };
 
         scroll_lock_led: scroll_lock_led {
