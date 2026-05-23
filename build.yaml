@@ -3,3 +3,4 @@ include:
   - board: "nice_nano//zmk"
     shield: cherry_ml4100
     artifact-name: cherry_ml4100_nice_nano_zmk
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
