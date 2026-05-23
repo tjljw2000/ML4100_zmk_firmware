@@ -25,10 +25,10 @@
 
         extra_layer_1 {
             status =  "reserved";
-        }
+        };
 
         extra_layer_2 {
             status =  "reserved";
-        }
+        };
     };
 };
