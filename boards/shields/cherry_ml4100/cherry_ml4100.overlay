@@ -82,11 +82,6 @@
     indicators {
         compatible = "zmk,indicator-leds";
 
-        num_lock_indicator: num_lock {
-            indicator = <HID_INDICATOR_NUM_LOCK>;  // 81
-            leds = <&num_lock_led>;
-        };
-
         caps_lock_indicator: caps_lock {
             indicator = <HID_INDICATOR_CAPS_LOCK>;
             leds = <&caps_lock_led>;
@@ -98,7 +93,7 @@
         };
     };
 
-    alias {
-        indicator-led = &num_lock_indicator;
+    aliases {
+        indicator-led = &num_lock_led;
     };
 };
