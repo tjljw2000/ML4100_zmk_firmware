@@ -67,7 +67,7 @@
         compatible = "gpio-leds";
 
         num_lock_led: num_lock_led {
-            gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
+            gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
         };
 
         caps_lock_led: caps_lock_led {
@@ -75,9 +75,9 @@
         };
 
         scroll_lock_led: scroll_lock_led {
-            gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;
+            gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
         };
-    };
+    };`
 
     indicators {
         compatible = "zmk,indicator-leds";
