@@ -26,22 +26,22 @@
             , <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // KB_WINL  <- old KB_CTRL
             , <&gpio0  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // KB_WINR  <- old KB_SFTL
             , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // COL5     <- old KB_FN
-            , <&gpio1 10 GPIO_OPEN_SOURCE>                       // COL6     <- old ROW8
-            , <&gpio0  3 GPIO_OPEN_SOURCE>                       // COL7     <- old ROW7
-            , <&gpio0 28 GPIO_OPEN_SOURCE>                       // COL8     <- old ROW6
-            , <&gpio0 31 GPIO_OPEN_SOURCE>                       // COL9     <- old ROW2
-            , <&gpio0 30 GPIO_OPEN_SOURCE>                       // COL10    <- old ROW1
+            , <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // COL6     <- old ROW8
+            , <&gpio0  3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // COL7     <- old ROW7
+            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // COL8     <- old ROW6
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // COL9     <- old ROW2
+            , <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // COL10    <- old ROW1
             ;
 
         row-gpios
-            = <&gpio1  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // ROW1 <- old COL10
-            , <&gpio1  4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // ROW2 <- old COL9
-            , <&gpio1 2 GPIO_ACTIVE_LOW>                         // ROW3 <- old LED3
-            , <&gpio1 0 GPIO_ACTIVE_HIGH>                        // ROW4 <- old LED2
-            , <&gpio0 24 GPIO_ACTIVE_LOW>                        // ROW5 <- old LED1
-            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // ROW6 <- old COL8
-            , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // ROW7 <- old COL7
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    // ROW8 <- old COL6
+            = <&gpio1  6 GPIO_OPEN_SOURCE>    // ROW1 <- old COL10
+            , <&gpio1  4 GPIO_OPEN_SOURCE>    // ROW2 <- old COL9
+            , <&gpio1  2 GPIO_OPEN_SOURCE>                         // ROW3 <- old LED3
+            , <&gpio1  0 GPIO_OPEN_SOURCE>                        // ROW4 <- old LED2
+            , <&gpio0 24 GPIO_OPEN_SOURCE>                        // ROW5 <- old LED1
+            , <&gpio0 22 GPIO_OPEN_SOURCE>    // ROW6 <- old COL8
+            , <&gpio0 13 GPIO_OPEN_SOURCE>    // ROW7 <- old COL7
+            , <&gpio0 20 GPIO_OPEN_SOURCE>    // ROW8 <- old COL6
             ;
     };
 
@@ -63,15 +63,15 @@
         compatible = "gpio-leds";
 
         num_lock_led: num_lock_led {
-            gpios = <&gpio1 13 GPIO_OPEN_SOURCE>;    // LED1 <- old ROW5
+            gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;    // LED1 <- old ROW5
         };
 
         caps_lock_led: caps_lock_led {
-            gpios = <&gpio0  2 GPIO_OPEN_SOURCE>;    // LED2 <- old ROW4
+            gpios = <&gpio0  2 GPIO_ACTIVE_HIGH>;    // LED2 <- old ROW4
         };
 
         scroll_lock_led: scroll_lock_led {
-            gpios = <&gpio0 29 GPIO_OPEN_SOURCE>;    // LED3 <- old ROW3
+            gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;    // LED3 <- old ROW3
         };
     };
 
